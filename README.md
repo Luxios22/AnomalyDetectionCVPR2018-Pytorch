@@ -49,7 +49,9 @@ Using my pre-trained model after 40K iterations, I achieve this following perfor
 ## Demo *
 ```python video_demo.py --feature_extractor "path-to-pretrained-fe" --feature_method "fe-method" --ad_model "path-to-pretrained-ad-model" --n_segments "number-of-segments"```
 
-The GUI would let you load a video and run the Anomaly Detection code (including feature extraction) and output a video with a graph of the Anomaly Detection prediction below.
+For example, the command could be like ```python video_demo.py --feature_extractor pretrained/c3d.pickle --feature_method c3d --ad_model exps/models/model_final_100000.weights --n_segments 32```
+
+Then it will open a GUI and the GUI would let you load a video and run the Anomaly Detection code (including feature extraction) and output a graph of the Anomaly Detection prediction.
 
 ## Annotation *
 ```python annotation_methods.py --path_list LIST_OF_VIDEO_PATH --dir_list LIST_OF_LIST_WITH_PATH_AND_VIDEO_NAME --normal_or_not LIST_TRUE_FALUE```
